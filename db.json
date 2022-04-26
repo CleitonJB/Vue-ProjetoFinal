@@ -20,6 +20,13 @@
           "production":   "2011 – 2018",
           "manufacturer": "Koenigsegg",
           "assembly":     "Suécia"
+      },
+      {
+          "id":           4,
+          "name":         "Honda Civic",
+          "production":   "1972 – atual",
+          "manufacturer": "Honda",
+          "assembly":     "Japão"
       }
   ]
 }
