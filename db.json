@@ -1,5 +1,5 @@
 {
-  "cars": [
+    "cars": [
       {
           "id":           1,
           "name":         "Mazda RX-7",
@@ -28,5 +28,5 @@
           "manufacturer": "Honda",
           "assembly":     "Japão"
       }
-  ]
-}
+    ]
+  }
