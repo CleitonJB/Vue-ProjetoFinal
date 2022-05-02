@@ -1,32 +1,55 @@
 {
   "cars": [
     {
-        "id":           1,
-        "name":         "Mazda RX-7",
-        "production":   "1978 – 2002",
-        "manufacturer": "Mazda",
-        "assembly":     "Japão"
+      "id": 1,
+      "name": "Mazda RX-7",
+      "production": "1978 – 2002",
+      "manufacturer": "Mazda",
+      "assembly": "Japão"
     },
     {
-        "id":           2,
-        "name":         "Toyota Supra",
-        "production":   "1978 – atual",
-        "manufacturer": "Toyota",
-        "assembly":     "Japão"
+      "id": 2,
+      "name": "Toyota Supra",
+      "production": "1978 – atual",
+      "manufacturer": "Toyota",
+      "assembly": "Japão"
     },
     {
-        "id":           3,
-        "name":         "Koenigsegg Agera",
-        "production":   "2011 – 2018",
-        "manufacturer": "Koenigsegg",
-        "assembly":     "Suécia"
+      "id": 3,
+      "name": "Koenigsegg Agera",
+      "production": "2011 – 2018",
+      "manufacturer": "Koenigsegg",
+      "assembly": "Suécia"
     },
     {
-        "id":           4,
-        "name":         "Honda Civic",
-        "production":   "1972 – atual",
-        "manufacturer": "Honda",
-        "assembly":     "Japão"
+      "id": 4,
+      "name": "Honda Civic",
+      "production": "1972 – atual",
+      "manufacturer": "Honda",
+      "assembly": "Japão"
+    }
+  ],
+  "series": [
+    {
+      "id": 1,
+      "title": "Big Bang: A Teoria",
+      "genres": "Comédia - Romance",
+      "release": "24/09/2007",
+      "language": "Inglês"
+    },
+    {
+      "id": 2,
+      "title": "Dois homens e meio",
+      "genres": "Comédia - Romance",
+      "release": "05/01/2004",
+      "language": "Inglês"
+    },
+    {
+      "id": 3,
+      "title": "Friends",
+      "genres": "Comédia - Romance",
+      "release": "06/02/1996",
+      "language": "Inglês"
     }
   ]
 }
