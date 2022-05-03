@@ -12,24 +12,53 @@
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  #app {
+    position: relative;
 
-#nav {
-  padding: 30px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #35806d;
+  }
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+  #nav {
+    //position: absolute;
+    z-index: 100;
+    width: 100vw;
 
-    &.router-link-exact-active {
-      color: #42b983;
+    background: #1d1d1d;
+
+    max-height: 2.2rem;
+    min-height: 2.2rem;
+    height: 2.2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      font-weight: 100;
+      color: #abb4bd;
+
+      max-width: 10vw;
+      min-width: 10vw;
+      width: 10vw;
+
+      text-decoration: none;
+
+      &.router-link-exact-active {
+        color: #42b983;
+        text-decoration: underline;
+        font-weight: 600;
+      }
     }
   }
-}
+
+  // Estilização para evento 'hover' nas tabelas da aplicação
+  .theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+    background: #e0e0e0;
+    color: #35806d;
+  }
 </style>
