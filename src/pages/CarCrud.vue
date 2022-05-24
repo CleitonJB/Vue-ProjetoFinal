@@ -25,7 +25,7 @@
                                 <v-container>
                                     <v-row>
                                         <v-col cols="12" sm="4" md="2">
-                                            <v-text-field v-model="modalForm.id" label="Id"></v-text-field>
+                                            <v-text-field :disabled="(dialogMode == 'adicionar') ? false : true" v-model="modalForm.id" label="Id"></v-text-field>
                                         </v-col>
                                         <v-col cols="12" sm="8" md="10">
                                             <v-text-field v-model="modalForm.name" label="Nome"></v-text-field>
