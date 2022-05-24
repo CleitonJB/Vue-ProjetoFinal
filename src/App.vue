@@ -20,6 +20,10 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #35806d;
+
+    height: 100vh;
+
+    background: linear-gradient(350deg, #2e8053, #fcfcfc 40%);
   }
 
   #nav {
