@@ -83,6 +83,20 @@
   </v-container>
 </template>
 
+<style scoped>
+    /* Titulo do card */
+    .v-card__title {
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.54);
+        color: white;
+    }
+
+    /* Remover excesso de espaço entre linhas */
+    .row + .row {
+        margin-top: 0;
+    }
+</style>
+
 <script>
     import axios from 'axios';
 
