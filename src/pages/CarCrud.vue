@@ -158,8 +158,6 @@
                 this.dialogMode = "";
             },
             save() {
-                this.dialogStatus = false;
-
                 switch(this.dialogMode) {
                     case "adicionar":
                         this.adicionar(this.modalForm);
@@ -168,11 +166,32 @@
                     case "editar":
                         this.editar(this.modalForm.id, this.modalForm);
                     break;
+
+                    default:
+                        this.dialogStatus = false;
+                    break;
+                }
+            },
+            async itemAlreadyExist(item) {
+                try {
+                    const response = await axios.get("http://localhost:3000/cars", { params: { id: item.id } });
+                    return (response.data.length > 0) ? true : false;
+                } catch (error) {
+                    alert(`Erro ao verificar existência do item (${item.id}): ${error}`);
                 }
             },
             adicionar(item) {
+                this.itemAlreadyExist(item)
+                    .then((alreadyExist) => {
+                        if(alreadyExist) {
+                            alert(`Já existe um carro registrado com o id (${item.id})!`);
+                            return;
+                        }
+                    });
+
                 axios.post("http://localhost:3000/cars", item)
                     .then(() => {
+                        this.dialogStatus = false;
                         alert(`Item (${item.id}) criado com sucesso!`);
                         this.inicializa();
                     })
@@ -184,6 +203,7 @@
                 this.dialogMode = "editar";
                 axios.put(`http://localhost:3000/cars/${itemId}`, item)
                     .then(() => {
+                        this.dialogStatus = false;
                         alert(`Item (${itemId}) editado com sucesso!`);
                         this.inicializa();
                     })
