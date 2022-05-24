@@ -8,7 +8,7 @@
               :items="series"
               :search="search"
               sort-by="id"
-              class="elavation-1"
+              class="elavation-1 table-container"
             >
                 <!-- Dialog -->
                 <template v-slot:top>

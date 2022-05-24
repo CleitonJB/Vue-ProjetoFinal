@@ -56,6 +56,13 @@
     }
   }
 
+  @media screen and (min-width: 992px) {
+    .v-data-table.table-container {
+      margin: auto;
+      max-width: 70vw;
+    }
+  }
+
   // Estilização para evento 'hover' nas tabelas da aplicação
   .theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
     background: #e0e0e0;
