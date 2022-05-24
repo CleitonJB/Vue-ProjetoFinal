@@ -2,7 +2,7 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
-           <h1> Listagem dos carros </h1>
+           <h1 class="page-header"> Listagem dos carros </h1>
            <v-data-table
               :headers="headers"
               :items="cars"

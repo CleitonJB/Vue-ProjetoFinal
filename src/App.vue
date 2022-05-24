@@ -56,6 +56,10 @@
     }
   }
 
+  .page-header {
+    margin: 4rem auto;
+  }
+
   @media screen and (min-width: 992px) {
     .v-data-table.table-container {
       margin: auto;
